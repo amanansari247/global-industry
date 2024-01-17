@@ -9,18 +9,7 @@
  * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
  */
 
-$(document).ready(function() {
 
-    $(`[unique-script-id="w-w-dm-id"] .btn-box`).click(function() {
-      $(this).parent().children(".overlay").show();
-  
-    });
-  
-  
-    $(`[unique-script-id="w-w-dm-id"] .close`).click(function() {
-      $(`[unique-script-id="w-w-dm-id"] .overlay`).hide();
-    });
-  });
 (function($) {
     $.fn.appear = function(fn, options) {
 
