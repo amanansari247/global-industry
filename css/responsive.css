@@ -9,6 +9,7 @@
 		overflow:hidden;	
 
 	}
+	
 
 }
 
@@ -349,7 +350,11 @@
 		margin:0px;
 
 		text-align:left;
+		 
 
+	}
+	.main-box{
+		background-color: #222222;
 	}
 
 	
@@ -663,6 +668,10 @@
 		padding-bottom:10px;
 
 	}
+	.main-box{
+		background-color: #222222;
+	}
+
 
 	
 
@@ -1413,6 +1422,10 @@
 		padding-bottom:10px;
 
 	}
+	.main-box{
+		background-color: #222222;
+	}
+
 
 	
 
@@ -1463,6 +1476,10 @@
 		padding-bottom:0px;
 
 	}
+	.main-box{
+		background-color: #222222;
+	}
+
 
 	
 
@@ -1543,6 +1560,10 @@
 		padding:0px;
 
 	}
+	.main-box{
+		background-color: #222222;
+	}
+
 
 	
 
@@ -1621,8 +1642,14 @@
 		float:left;
 
 		padding:20px 0px 30px;
+		
+		
 
 	}
+	.main-box{
+		background-color: #222222;
+	}
+
 
 	
 
@@ -2299,6 +2326,10 @@
 		top:0px;
 
 	}
+	.main-box{
+		background-color: #222222;
+	}
+
 
 	
 
@@ -2373,6 +2404,10 @@
 		padding-bottom:10px;
 
 	}
+	.main-box{
+		background-color: #222222;
+	}
+
 
 	
 
