@@ -127,7 +127,13 @@ font-family: 'Raleway', sans-serif;*/
 	outline:none;
 
 }
+.clients-column {
+    margin-bottom: 20px; /* Add space at the bottom of the column */
+}
 
+.sponsors-carousel .slide-item {
+    margin-right: 10px; /* Add space between individual certificates */
+}
 
 
 /*** 
@@ -20070,16 +20076,16 @@ form {
 }
 .carousel .thumb-wrapper  {
 	padding: 25px 15px;
-	background-color: #111111;
+	
 	border-radius: 6px;
 	text-align: center;
 	position: relative;
 	margin-bottom: 10px;
 	
-	box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+	
 }
 .carousel .item .img-box {
-	height: 120px;
+	height: 170px;
 	margin-bottom: 20px;
 	width: 100%;
 	position: relative;
@@ -20196,3 +20202,39 @@ form {
 	font-size: 14px;
 	color: #ffc000;
 }
+
+/* Custom styles for the download button */
+.download-button {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-button a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.download-button:hover {
+    background-color: #71B620;
+	
+}
+
+/* Responsive styles */
+@media screen and (max-width: 767px) {
+    .download-button {
+		bottom: 84px;
+        right: 10px;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
