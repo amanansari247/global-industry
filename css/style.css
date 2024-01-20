@@ -271,16 +271,11 @@ p{
 
 
 
-.auto-container{
-
-	position:static;
-
-	max-width:1200px;
-
-	padding:0px 15px;
-
-	margin:0 auto;
-
+.auto-container {
+    position: static;
+    max-width: 100%;
+    padding: 0px 15px;
+    margin: 0 auto;
 }
 
 
@@ -1982,12 +1977,10 @@ img{
 
 
 
-.main-header .header-upper{
-
-	position:relative;
-
-	top:40px;
-
+.main-header .header-upper {
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -2004,7 +1997,7 @@ img{
 
 	position:relative;
 
-	bottom:-40px;
+	bottom:-49px;
 
 	padding:0px 0px 0px 35px;
 
