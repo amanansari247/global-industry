@@ -20229,5 +20229,30 @@ form {
         font-size: 14px;
         padding: 8px 15px;
     }
+
 }
+
+.testimonial-box {
+	height: auto;
+}
+
+.testimonial-box blockquote {
+	margin-bottom: 0; /* Remove default blockquote margin */
+}
+.testimonial-section .owl-carousel .owl-item img {
+    display: inline-block;
+    width: 100px;
+}
+.card-img-top {
+    object-fit: cover; /* or use 'contain' based on your preference */
+    height: 100%; /* Set the height as needed */
+    width: 100%;
+}
+
+/* Optionally, you can set a specific height for the card to ensure uniformity */
+.product-item .card {
+    height: 100%;
+}
+
+
 

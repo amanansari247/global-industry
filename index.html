@@ -534,47 +534,46 @@
     
     <!--Testimonial Section-->
     <section class="testimonial-section">
-    	<div class="auto-container">
-        	<!--Sec Title-->
+        <div class="auto-container">
+            <!--Sec Title-->
             <div class="sec-title centered">
-            	<h2>Testimonial</h2>
+                <h2>Testimonial</h2>
                 <div class="separater"></div>
                 <div class="text">Some awesome text from our clients</div>
             </div>
+
             <div class="three-item-carousel owl-carousel owl-theme">
-                
-                
-                  <figure class="snip1390 hover"><img src="images/testimonials/img-6.jpg" alt="profile-sample5" class="profile" />
+                <figure class="snip1390 testimonial-box"><img src="images/testimonials/img-6.jpg" alt="profile-sample5" class="profile" />
                     <figcaption>
-                     
-                      <blockquote>Let me say that I am pleased with the quality of the work and the attitude of your company as a whole. I'm looking forward to working with you again </blockquote>
+                        <blockquote>Let me say that I am pleased with the quality of the work and the attitude of your company as a whole. I'm looking forward to working with you again</blockquote>
                     </figcaption>
-                  </figure>
-                  <figure class="snip1390"><img src="images/testimonials/img-7.JPG" alt="profile-sample6" class="profile" />
+                </figure>
+
+                  <figure class="snip1390 testimonial-box"><img src="images/testimonials/img-7.JPG" alt="profile-sample6" class="profile" />
                     <figcaption>
                      
                       <blockquote>Thank you for handling this so promptly and professionally. It is always a pleasure working with everyone at Durable Metal Industry</blockquote>
                     </figcaption>
                   </figure>
-                  <figure class="snip1390"><img src="images/testimonials/img-8.JPG" alt="profile-sample6" class="profile" />
+                  <figure class="snip1390 testimonial-box"><img src="images/testimonials/img-8.JPG" alt="profile-sample6" class="profile" />
                     <figcaption>
                       
                       <blockquote>I can honestly say, out of our more than 50 suppliers we work with, you are the most timely, with the least amount of trouble and need of constant communication</blockquote>
                     </figcaption>
                   </figure>
-                  <figure class="snip1390"><img src="images/testimonials/img-6.jpg" alt="profile-sample6" class="profile" />
+                  <figure class="snip1390 testimonial-box"><img src="images/testimonials/img-6.jpg" alt="profile-sample6" class="profile" />
                     <figcaption>
                      
                       <blockquote>Excellent and timely responses from staffs is compelling</blockquote>
                     </figcaption>
                   </figure>
-                  <figure class="snip1390"><img src="images/testimonials/img-7.JPG" alt="profile-sample6" class="profile" />
+                  <figure class="snip1390 testimonial-box"><img src="images/testimonials/img-7.JPG" alt="profile-sample6" class="profile" />
                     <figcaption>
                      
                       <blockquote>Transparent in committing the lead time and acheiving it as promised is an added advantage to Durable</blockquote>
                     </figcaption>
                   </figure>
-                  <figure class="snip1390"><img src="images/testimonials/img-8.JPG" alt="profile-sample6" class="profile" />
+                  <figure class="snip1390 testimonial-box"><img src="images/testimonials/img-8.JPG" alt="profile-sample6" class="profile" />
                     <figcaption>
                      
                       <blockquote>Well pleased over the manufacturing quality of the steel lockers, also the swift delivery is worth of appreciation</blockquote>
@@ -584,6 +583,61 @@
             </div>
         </div>
     </section>
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initialize Owl Carousel
+            $('.three-item-carousel').owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 30,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            });
+
+            // Calculate and set the maximum height for testimonial boxes
+            function setTestimonialBoxHeight() {
+                var maxHeight = 0;
+                $('.testimonial-box blockquote').each(function () {
+                    var height = $(this).outerHeight();
+                    if (height > maxHeight) {
+                        maxHeight = height;
+                    }
+                });
+                $('.testimonial-box').css('height', maxHeight);
+            }
+
+            // Set the initial height
+            setTestimonialBoxHeight();
+
+            // Recalculate and set height on window resize
+            $(window).on('resize', function () {
+                setTestimonialBoxHeight();
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+    
     <!--End Testimonial Section-->
     
     <!--Counter Section-->
